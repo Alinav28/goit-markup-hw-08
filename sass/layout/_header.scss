@@ -6,12 +6,12 @@
 .header-contacts {
   display: flex;
   align-items: center;
-  @include wid(1200px);
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-.header__nav {
+.navigation-header {
   display: flex;
   align-items: center;
 }

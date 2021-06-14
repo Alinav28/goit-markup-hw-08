@@ -9,7 +9,10 @@
 }
 .logotype-footer {
   font-family: var(--second-foyn);
-  @include font(26px, 700, 1.19, 0.03em);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--light-color-content);
   display: flex;
 }
@@ -17,17 +20,20 @@
   margin-top: 20px;
   font-style: normal;
 }
-.address-item {
-  &:not(:last-child) {
-    margin-bottom: 9px;
-  }
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-link {
-  @include font(14px, 400, 1.71, 0.03em);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--light-color-content);
 }
 .contact-link-footer {
-  @include font(14px, 400, 1.71, 0.03em);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-logotype-section {
@@ -37,33 +43,15 @@
   color: #ffffff;
   margin-bottom: 20px;
 }
-.social-link-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include wid(44px, 44px);
-  background-color: rgba(194, 80, 80, 0.1);
-  border-radius: 50%;
-  transition: background-color 250ms linear;
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-  }
-}
-.social-svg-footer {
-  @include wid(20px, 20px);
-  fill: var(--light-color-content);
-}
-.sektion-footer-fopm {
-  position: relative;
-  display: block;
-  margin-left: 93px;
-  @include wid(570px, 86px);
-}
+
 .name-footer-form {
   align-content: center;
-  @include wid(219px, 16px);
-  @include font(14px, 700, 1.14, 0.03em);
+  width: 219px;
+  height: 16px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light-color-content);
   margin-bottom: 20px;
@@ -75,7 +63,8 @@
 }
 .footer-contact-input {
   margin-top: 20px;
-  @include wid(358px, 50px);
+  width: 358px;
+  height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -85,22 +74,28 @@
   outline: none;
   transition: background-color 250ms linear;
   cursor: pointer;
-  &:focus {
-    border-color: var(--bt-menu-background);
-  }
-  &::placeholder {
-    font-family: var(--first-foyn);
-    @include font(16px, 400, 1.25, 0.03em);
-    display: flex;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.6);
-    padding-left: 16px;
-  }
 }
+.footer-contact-input:focus {
+  border-color: var(--bt-menu-background);
+}
+.footer-contact-input::placeholder {
+  font-family: var(--first-foyn);
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+}
+
 .bt-footer-form {
   position: relative;
   margin-top: 30px;
-  @include font(16px, 700, 1.87, 0.06em);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
   color: var(--light-color-content);
   background: var(--modal-button-background);
   padding: 10px 62px 10px 29px;
@@ -112,15 +107,16 @@
   display: block;
   cursor: pointer;
   transition: background-color 250ms linear, color 250ms linear;
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-  }
 }
+.bt-footer-form:hover,
+.bt-footer-form:focus {
+  background-color: var(--accent-color);
+}
+
 .svg-footer-form {
   position: absolute;
   top: 25%;
   right: 28px;
-  @include wid(24px, 24px);
-  @include wid(24px, 24px);
+  width: 24px;
+  height: 24px;
 }
