@@ -1,18 +1,14 @@
-.background-anvantages {
+.anvantages {
   padding-top: 94px;
   padding-bottom: 47px;
 }
-.anvantages-heading {
+.anvantages__heading {
   @include font(14px, 700, 1.14, 0.03em);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+  margin-bottom: 10px;
 }
-
-.svg-background {
+.anvantages__tumb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +16,7 @@
   background-color: var(--bt-menu-background);
   margin-bottom: 30px;
 }
-.list-anvantages {
+.anvantages__list {
   display: flex;
   align-items: center;
 }
@@ -30,7 +26,7 @@
   justify-content: center;
   align-items: center;
 }
-.item-anvantages {
+.anvantages__item {
   &:not(:last-child) {
     margin-right: 30px;
   }

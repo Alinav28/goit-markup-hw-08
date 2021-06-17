@@ -1,55 +1,46 @@
 .scocial-list {
   display: flex;
 }
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
-}
-.social-link:hover .social-svg,
-.social-link:focus .social-svg {
-  fill: var(--light-color-content);
-}
-.social-svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--social-svg-color);
-  transition: fill 250ms linear;
-}
-.social-item:not(:last-child) {
+.scocial-list__item:not(:last-child) {
   margin-right: 10px;
 }
-.social-link {
+.scocial-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  @include wid(44px, 44px);
   border-radius: 50%;
   transition: background-color 250ms linear;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
-.social-link-footer {
+.social-svg {
+  @include wid(20px, 20px);
+  fill: var(--social-svg-color);
+  transition: fill 250ms linear;
+  .scocial-list__link:hover &,
+  .scocial-list__link:focus & {
+    fill: var(--light-color-content);
+  }
+}
+
+.footer-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  @include wid(44px, 44px);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition: background-color 250ms linear;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
-.social-svg-footer {
-  width: 20px;
-  height: 20px;
+.footer__social-svg {
+  @include wid(20px, 20px);
   fill: var(--light-color-content);
-}
-.social-link-footer:hover,
-.social-link-footer:focus {
-  background-color: var(--accent-color);
-}
-.sektion-footer-fopm {
-  position: relative;
-  display: block;
-  margin-left: 93px;
-  width: 570px;
-  height: 86px;
+  transition: fill 250ms linear;
 }

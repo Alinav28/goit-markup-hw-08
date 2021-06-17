@@ -2,11 +2,12 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients-list {
+.clients__list {
   display: flex;
   transform: fill 250ms linear;
+  padding-top: 50px;
 }
-.link-clients-svg {
+.clients__link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   @include wid(170px, 92px);
@@ -24,11 +25,8 @@
     fill: var(--accent-color);
   }
 }
-.second-heading {
-  padding-bottom: 50px;
-}
 
-.clients-item {
+.clients__item {
   fill: var(--clients-svg-color);
   &:not(:last-child) {
     margin-right: 30px;

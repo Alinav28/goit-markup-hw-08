@@ -10,7 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.hero-item {
+.hero__item {
   margin-left: 226px;
   width: 663px;
   display: flex;
@@ -20,11 +20,6 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--light-color-content);
-}
-.modal-button {
-  margin-top: 30px;
-  justify-content: center;
-  cursor: pointer;
 }
 .modal-button {
   font-family: var(--first-foyn);
@@ -38,8 +33,10 @@
   border-style: none;
   padding: 10px 32px;
   display: block;
+  margin-top: 30px;
+  justify-content: center;
+  cursor: pointer;
   transition: background-color 250ms linear, color 250ms linear;
-
   &:hover,
   &:focus {
     background-color: var(--accent-color);

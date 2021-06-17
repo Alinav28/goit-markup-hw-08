@@ -1,44 +1,38 @@
-.my-command {
+.command {
   background-color: var(--bt-menu-background);
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.h-command {
-  margin-bottom: 50px;
-}
-.third-heading {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  padding-bottom: 10px;
-}
-.content-command {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-content);
-  margin-bottom: 16px;
-}
-.text-comand {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 32px;
-  padding-left: 32px;
-}
-.command-list {
+.command__list {
   display: flex;
-  margin-top: -30px;
+  margin-top: 50px;
   margin-left: -30px;
 }
-.item-command {
+.command__item {
   margin-top: 30px;
   margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--light-color-content);
+}
+.third-heading {
+  @include font(16px, 500, 1.19, 0.03);
+  text-align: center;
+  color: var(--title-color);
+  padding-bottom: 10px;
+}
+
+.comand__text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.command__content {
+  @include font(16px, 400, 1.19, 0.03);
+  text-align: center;
+  color: var(--color-content);
+  margin-bottom: 16px;
 }

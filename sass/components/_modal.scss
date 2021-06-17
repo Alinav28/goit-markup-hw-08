@@ -11,13 +11,12 @@
   padding: 40px;
   cursor: pointer;
 }
-.close-bt {
+
+.modal__close-bt {
   position: absolute;
   top: 8px;
   right: 8px;
   @include wid(30px, 30px);
-  width: 30px;
-  height: 30px;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -31,17 +30,18 @@
   align-content: center;
   padding: 0;
 
-  .close-bt:focus &,
-  .close-bt:hover & {
+  .modal__close-bt:focus &,
+  .modal__close-bt:hover & {
     fill: var(--accent-color);
   }
 }
-.modal-form {
+
+.modal__form {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
-.submit-bt-form {
+.form__submit-bt {
   font-family: var(--first-foyn);
   @include font(16px, 700, 1.87, 0.06em);
   color: var(--light-color-content);
@@ -56,7 +56,9 @@
   display: block;
   transition: background-color 250ms linear, color 250ms linear;
   cursor: pointer;
-
+  font-family: var(--first-foyn);
+  font-weight: 700;
+  font-size: 16px;
   &:hover,
   &:focus {
     background-color: var(--accent-color);

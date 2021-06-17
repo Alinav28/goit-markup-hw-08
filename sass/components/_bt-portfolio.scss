@@ -1,13 +1,10 @@
-.button-container {
-  padding-bottom: 50px;
-}
-.list-menu {
+.bt__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
   transition: box-shadow 250ms linear;
 }
-.item-menu {
+.bt-list__item {
   background-color: var(--bt-menu-background);
   &:not(:last-child) {
     margin-right: 8px;

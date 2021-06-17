@@ -3,7 +3,7 @@
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.header-contacts {
+.header__contacts {
   display: flex;
   align-items: center;
   width: 1200px;
@@ -11,7 +11,7 @@
   padding-right: 15px;
   margin: 0 auto;
 }
-.navigation-header {
+.header__nav {
   display: flex;
   align-items: center;
 }
@@ -25,16 +25,16 @@
 .logotype-firsst-part {
   color: var(--accent-color);
 }
-.navigation-list {
+.nav__list {
   display: flex;
   align-items: center;
 }
-.navigation-item {
+.nav__item {
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
-.navigation-link {
+.nav__link {
   @include font(14px, 500, 1.14, 0.02em);
   letter-spacing: 0.02em;
   color: var(--title-color);
@@ -56,33 +56,17 @@
     top: 32px;
   }
 }
-.header-contacts-item {
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-.contacts-svg {
-  fill: var(--color-content);
-}
-.email-svg {
-  @include wid(16px, 12px);
-}
-.tel-svg {
-  @include wid(10px, 16px);
-}
-.contacts-svg {
-  margin-right: 10px;
-}
-.contacts-svg {
-  fill: currentColor;
-}
-
-.header-contacts-list {
+.header-contacts__list {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-.header-contacts-link {
+.header-contacts__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.header-contacts__link {
   @include font(14px, 500, 1.14, 0.02em);
   letter-spacing: 0.02em;
   color: var(--color-content);
@@ -91,4 +75,15 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+.contacts-svg {
+  fill: var(--color-content);
+  margin-right: 10px;
+  fill: currentColor;
+}
+.email-svg {
+  @include wid(16px, 12px);
+}
+.tel-svg {
+  @include wid(10px, 16px);
 }
