@@ -15,10 +15,10 @@
 <body>
     <!--Header-->
     <header class="header">
-        <div class=" header__contacts">
+        <div class="container header_container">
+            <a class="logotype link animate__pulse animate__animated" href="index.html" lang="en"> <span
+                    class="logotype-firsst-part">Web</span>Studio</a>
             <nav class="header__nav">
-                <a class="logotype link animate__pulse animate__animated" href="index.html" lang="en"> <span
-                        class="logotype-firsst-part">Web</span>Studio</a>
                 <ul class="nav__list list">
                     <li class="nav__item">
                         <a class="nav__link link" href="index.html">Студия</a>
@@ -31,6 +31,11 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="manu-bt" data-menu-button>
+                <svg class="manu-bt__svg">
+                    <use href="./images/nav.svg#icon-menu"></use>
+                </svg>
+            </button>
             <ul class="header-contacts__list list">
                 <li class="header-contacts__item">
                     <a class="header-contacts__link link" href="mailto:info@devstudio.com">
@@ -51,6 +56,49 @@
             </ul>
         </div>
     </header>
+    <!--menu mobail-->
+    <div class="menu is-open" data-menu>
+        <div class="mobail-menu">
+            <button class="menu__close-bt" data-menu-close type="button">
+                <svg class="close-bt-svg">
+                    <use href="./images/sprite.svg#icon-close-menu"></use>
+                </svg>
+            </button>
+            <ul class="mobail-menulist list">
+                <li class="mobail-menu_item">
+                    <a class="mobail-menu_link acsent link" href="index.html">Студия</a>
+                </li>
+                <li class="mobail-menu_item">
+                    <a class="mobail-menu_link link" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobail-menu_item">
+                    <a class="mobail-menu_link link" href="">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobail-menu_contact-list list">
+                <li class="mobail-menu_contact-item">
+                    <a class="mobail-menu_contact-tel wid link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobail-menu_contact-item">
+                    <a class="mobail-menu_contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobail-menu_cosial-lict list">
+                <li class="mobail-menu_cosial-item">
+                    <a href="" class="mobail-menu_cosial-linc link">Instagram</a>
+                </li>
+                <li class="mobail-menu_cosial-item">
+                    <a href="" class="mobail-menu_cosial-linc link">Twitter</a>
+                </li>
+                <li class="mobail-menu_cosial-item">
+                    <a href="" class="mobail-menu_cosial-linc link">Facebook</a>
+                </li>
+                <li class="mobail-menu_cosial-item">
+                    <a href="" class="mobail-menu_cosial-linc link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!--Menu-->
     <main> 
         <section class="portfolio">
@@ -79,19 +127,35 @@
                     <li class="content__item">
                         <a class="overly-hover-linc link" href="">
                             <div class="overly-hover">
-                                <img class="img-content" src="./portfolio.imagec/img1.jpg" alt="Ноутбук" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./portfolio.imagec/1img-desktop.jpg 1x, ./portfolio.imagec/1img-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./portfolio.imagec/1img-tablet.jpg 1x, ./portfolio.imagec/1img-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./portfolio.imagec/1img-mobail.jpg 1x ./portfolio.imagec/1img-mobail@2x.jpg 2x"
+                                        media="(max-width: 768px)">
+                                    <img src="./portfolio.imagec/1img-mobail.jpg" alt="Фото" class="picture_img">
+                                </picture>
                                 <p class="overly-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="content__texts-item">
                                 <h3 class="third-h">Технокряк</h3>
-                                <P class="texts-item__text" >Веб-сайт</P>
+                                <P class="texts-item__text texts-item-pd" >Веб-сайт</P>
                             </div>  
                         </a>
                     </li>
                     <li class="content__item"> 
                         <a class="overly-hover-linc link" href="">
                             <div class="overly-hover">
-                                <img class="img-content" src="./portfolio.imagec/img2.jpg" alt="Игра в баскетбол" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./portfolio.imagec/2img-desktop.jpg 1x, ./portfolio.imagec/2img-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./portfolio.imagec/2img-tablet.jpg 1x, ./portfolio.imagec/2img-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./portfolio.imagec/2img-mobail.jpg 1x ./portfolio.imagec/2img-mobail@2x.jpg 2x"
+                                        media="(max-width: 768px)">
+                                    <img src="./portfolio.imagec/2img-mobail.jpg" alt="Фото" class="picture_img">
+                                </picture>
                                 <p class="overly-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -104,9 +168,17 @@
                     <li class="content__item">
                         <a class="overly-hover-linc link" href="">
                             <div class="overly-hover">
-                                <img class="img-content" src="./portfolio.imagec/img3.jpg" alt="Логотип" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./portfolio.imagec/3img-desktop.jpg 1x, ./portfolio.imagec/3img-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./portfolio.imagec/3img-tablet.jpg 1x, ./portfolio.imagec/3img-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./portfolio.imagec/3img-mobail.jpg 1x ./portfolio.imagec/3img-mobail@2x.jpg 2x"
+                                        media="(max-width: 768px)">
+                                    <img src="./portfolio.imagec/3img-mobail.jpg" alt="Фото" class="picture_img">
+                                </picture>
                                 <p class="overly-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
-                                платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                                    платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="content__texts-item"> 
                                 <h3 class="third-h">Ресторан <span lang="en">Seafood</span></h3>
@@ -117,7 +189,15 @@
                     <li class="content__item">
                         <a class="overly-hover-linc link" href="">
                             <div class="overly-hover">
-                                <img class="img-content" src="./portfolio.imagec/img4.jpg" alt="Наушники" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./portfolio.imagec/4img-desktop.jpg 1x, ./portfolio.imagec/4img-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./portfolio.imagec/4img-tablet.jpg 1x, ./portfolio.imagec/4img-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./portfolio.imagec/4img-mobail.jpg 1x ./portfolio.imagec/4img-mobail@2x.jpg 2x"
+                                        media="(max-width: 768px)">
+                                    <img src="./portfolio.imagec/4img-mobail.jpg" alt="Фото" class="picture_img">
+                                </picture>
                                 <p class="overly-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -130,7 +210,15 @@
                     <li class="content__item">
                         <a class="overly-hover-linc link" href="">
                             <div class="overly-hover">
-                                <img class="img-content" src="./portfolio.imagec/img5.jpg" alt="Коробки" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./portfolio.imagec/5img-desktop.jpg 1x, ./portfolio.imagec/5img-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./portfolio.imagec/5img-tablet.jpg 1x, ./portfolio.imagec/5img-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./portfolio.imagec/5img-mobail.jpg 1x ./portfolio.imagec/5img-mobail@2x.jpg 2x"
+                                        media="(max-width: 768px)">
+                                    <img src="./portfolio.imagec/5img-mobail.jpg" alt="Фото" class="picture_img">
+                                </picture>
                                <p class="overly-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -143,7 +231,15 @@
                     <li class="content__item">
                         <a class="overly-hover-linc link" href="">
                             <div class="overly-hover">
-                                <img class="img-content" src="./portfolio.imagec/img6.jpg" alt="Компьютерный экран" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./portfolio.imagec/6img-desktop.jpg 1x, ./portfolio.imagec/6img-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./portfolio.imagec/6img-tablet.jpg 1x, ./portfolio.imagec/6img-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./portfolio.imagec/6img-mobail.jpg 1x ./portfolio.imagec/6img-mobail@2x.jpg 2x"
+                                        media="(max-width: 768px)">
+                                    <img src="./portfolio.imagec/6img-mobail.jpg" alt="Фото" class="picture_img">
+                                </picture>
                                 <p class="overly-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -156,7 +252,15 @@
                     <li class="content__item">
                         <a class="overly-hover-linc link" href="">
                             <div class="overly-hover">
-                                <img class="img-content" src="./portfolio.imagec/img7.jpg" alt="Книга" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./portfolio.imagec/7img-desktop.jpg 1x, ./portfolio.imagec/7img-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./portfolio.imagec/7img-tablet.jpg 1x, ./portfolio.imagec/7img-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./portfolio.imagec/7img-mobail.jpg 1x ./portfolio.imagec/7img-mobail@2x.jpg 2x"
+                                        media="(max-width: 768px)">
+                                    <img src="./portfolio.imagec/7img-mobail.jpg" alt="Фото" class="picture_img">
+                                </picture>
                                <p class="overly-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -169,7 +273,15 @@
                     <li class="content__item">
                         <a class="overly-hover-linc link" href="">
                             <div class="overly-hover">
-                                <img class="img-content" src="./portfolio.imagec/img8.jpg" alt="Бирка" width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./portfolio.imagec/8img-desktop.jpg 1x, ./portfolio.imagec/8img-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./portfolio.imagec/8img-tablet.jpg 1x, ./portfolio.imagec/8img-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./portfolio.imagec/8img-mobail.jpg 1x ./portfolio.imagec/8img-mobail@2x.jpg 2x"
+                                        media="(max-width: 768px)">
+                                    <img src="./portfolio.imagec/8img-mobail.jpg" alt="Фото" class="picture_img">
+                                </picture>
                                <p class="overly-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -182,7 +294,15 @@
                     <li class="content__item">
                         <a class="overly-hover-linc link" href="">
                             <div class="overly-hover">
-                                <img class="img-content" src="./portfolio.imagec/img9.jpg" alt="Ноутбук"width="370" height="294">
+                                <picture class="picture">
+                                    <source srcset="./portfolio.imagec/9img-desktop.jpg 1x, ./portfolio.imagec/9img-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./portfolio.imagec/9img-tablet.jpg 1x, ./portfolio.imagec/9img-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source srcset="./portfolio.imagec/9img-mobail.jpg 1x ./portfolio.imagec/9img-mobail@2x.jpg 2x"
+                                        media="(max-width: 768px)">
+                                    <img src="./portfolio.imagec/9img-mobail.jpg" alt="Фото" class="picture_img">
+                                </picture>
                                 <p class="overly-hover-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                 платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>

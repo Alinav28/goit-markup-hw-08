@@ -1,46 +1,149 @@
-.scocial-list {
-  display: flex;
-}
-.scocial-list__item:not(:last-child) {
-  margin-right: 10px;
-}
-.scocial-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include wid(44px, 44px);
-  border-radius: 50%;
-  transition: background-color 250ms linear;
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
+//mobail
+@media screen and (max-width: 768px) {
+  .scocial-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-}
-.social-svg {
-  @include wid(20px, 20px);
-  fill: var(--social-svg-color);
-  transition: fill 250ms linear;
-  .scocial-list__link:hover &,
-  .scocial-list__link:focus & {
-    fill: var(--light-color-content);
+  .scocial-list__item:not(:last-child) {
+    margin-right: 10px;
   }
-}
+  .scocial-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include wid(44px, 44px);
+    border-radius: 50%;
+    transition: background-color 250ms linear;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  .social-svg {
+    @include wid(20px, 20px);
+    fill: var(--social-svg-color);
+    transition: fill 250ms linear;
+    .scocial-list__link:hover &,
+    .scocial-list__link:focus & {
+      fill: var(--light-color-content);
+    }
+  }
 
-.footer-social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include wid(44px, 44px);
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition: background-color 250ms linear;
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
+  .footer-social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include wid(44px, 44px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms linear;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  .footer__social-svg {
+    @include wid(20px, 20px);
+    fill: var(--light-color-content);
+    transition: fill 250ms linear;
   }
 }
-.footer__social-svg {
-  @include wid(20px, 20px);
-  fill: var(--light-color-content);
-  transition: fill 250ms linear;
+//tablet
+@media screen and (max-width: 768px) {
+  .scocial-list {
+    display: flex;
+  }
+  .scocial-list__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .scocial-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include wid(44px, 44px);
+    border-radius: 50%;
+    transition: background-color 250ms linear;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  .social-svg {
+    @include wid(20px, 20px);
+    fill: var(--social-svg-color);
+    transition: fill 250ms linear;
+    .scocial-list__link:hover &,
+    .scocial-list__link:focus & {
+      fill: var(--light-color-content);
+    }
+  }
+
+  .footer-social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include wid(44px, 44px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms linear;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  .footer__social-svg {
+    @include wid(20px, 20px);
+    fill: var(--light-color-content);
+    transition: fill 250ms linear;
+  }
+}
+//desktop
+@media screen and (min-width: 1200px) {
+  .scocial-list {
+    display: flex;
+  }
+  .scocial-list__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .scocial-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include wid(44px, 44px);
+    border-radius: 50%;
+    transition: background-color 250ms linear;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  .social-svg {
+    @include wid(20px, 20px);
+    fill: var(--social-svg-color);
+    transition: fill 250ms linear;
+    .scocial-list__link:hover &,
+    .scocial-list__link:focus & {
+      fill: var(--light-color-content);
+    }
+  }
+
+  .footer-social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include wid(44px, 44px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms linear;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  .footer__social-svg {
+    @include wid(20px, 20px);
+    fill: var(--light-color-content);
+    transition: fill 250ms linear;
+  }
 }

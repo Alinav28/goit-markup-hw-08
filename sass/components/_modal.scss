@@ -1,66 +1,138 @@
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  @include wid(528px, 580px);
-  background-color: var(--light-color-content);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 40px;
-  cursor: pointer;
-}
+//mobail
+@media screen and (max-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include wid(450px, 609px);
+    background-color: var(--light-color-content);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+    cursor: pointer;
+  }
 
-.modal__close-bt {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  @include wid(30px, 30px);
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-  padding: 0;
-  transition: background-color 250ms linear, color 250ms linear;
-}
+  .modal__close-bt {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @include wid(30px, 30px);
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 250ms linear, color 250ms linear;
+  }
 
-.close-bt-svg {
-  @include wid(18px, 18px);
-  align-content: center;
-  padding: 0;
+  .close-bt-svg {
+    @include wid(18px, 18px);
+    align-content: center;
+    padding: 0;
 
-  .modal__close-bt:focus &,
-  .modal__close-bt:hover & {
-    fill: var(--accent-color);
+    .modal__close-bt:focus &,
+    .modal__close-bt:hover & {
+      fill: var(--accent-color);
+    }
+  }
+
+  .modal__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .form__submit-bt {
+    font-family: var(--first-foyn);
+    @include font(16px, 700, 1.87, 0.06em);
+    color: var(--light-color-content);
+    background: var(--modal-button-background);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+    padding: 10px 55px;
+    display: block;
+    transition: background-color 250ms linear, color 250ms linear;
+    cursor: pointer;
+    font-family: var(--first-foyn);
+    font-weight: 700;
+    font-size: 16px;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
   }
 }
+//desctop
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include wid(528px, 580px);
+    background-color: var(--light-color-content);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+    cursor: pointer;
+  }
 
-.modal__form {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-.form__submit-bt {
-  font-family: var(--first-foyn);
-  @include font(16px, 700, 1.87, 0.06em);
-  color: var(--light-color-content);
-  background: var(--modal-button-background);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: none;
-  padding: 10px 55px;
-  display: block;
-  transition: background-color 250ms linear, color 250ms linear;
-  cursor: pointer;
-  font-family: var(--first-foyn);
-  font-weight: 700;
-  font-size: 16px;
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
+  .modal__close-bt {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @include wid(30px, 30px);
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 250ms linear, color 250ms linear;
+  }
+
+  .close-bt-svg {
+    @include wid(18px, 18px);
+    align-content: center;
+    padding: 0;
+
+    .modal__close-bt:focus &,
+    .modal__close-bt:hover & {
+      fill: var(--accent-color);
+    }
+  }
+
+  .modal__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .form__submit-bt {
+    font-family: var(--first-foyn);
+    @include font(16px, 700, 1.87, 0.06em);
+    color: var(--light-color-content);
+    background: var(--modal-button-background);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+    padding: 10px 55px;
+    display: block;
+    transition: background-color 250ms linear, color 250ms linear;
+    cursor: pointer;
+    font-family: var(--first-foyn);
+    font-weight: 700;
+    font-size: 16px;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
   }
 }

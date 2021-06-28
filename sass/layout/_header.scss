@@ -1,89 +1,316 @@
-.header {
-  border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-.header__contacts {
-  display: flex;
-  align-items: center;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-.header__nav {
-  display: flex;
-  align-items: center;
-}
-.logotype {
-  font-family: var(--second-foyn);
-  @include font(26px, 700, 1.19, 0.03em);
-  color: var(--color-logo-heder);
-  margin-right: 93px;
-  animation-duration: 250ms;
-}
-.logotype-firsst-part {
-  color: var(--accent-color);
-}
-.nav__list {
-  display: flex;
-  align-items: center;
-}
-.nav__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+//mobail
+@media screen and (max-width: 768px) {
+  .header {
+    border-bottom: 1px solid #ececec;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 0 auto;
   }
-}
-.nav__link {
-  @include font(14px, 500, 1.14, 0.02em);
-  letter-spacing: 0.02em;
-  color: var(--title-color);
-  transition: color 250ms linear;
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-.activ {
-  color: var(--accent-color);
-  &::after {
+  .header_container {
     display: flex;
-    content: "";
-    @include wid(100%, 4px);
-    background-color: var(--accent-color);
-    flex-shrink: 0;
-    position: relative;
-    top: 32px;
+    margin: 0 auto;
+    align-content: center;
   }
-}
-.header-contacts__list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-.header-contacts__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+  .logotype {
+    margin-left: 0;
+    display: flex;
+    font-family: var(--second-foyn);
+    @include font(26px, 700, 1.19, 0.03em);
+    color: var(--color-logo-heder);
+    animation-duration: 250ms;
   }
-}
-.header-contacts__link {
-  @include font(14px, 500, 1.14, 0.02em);
-  letter-spacing: 0.02em;
-  color: var(--color-content);
-  transition: color 250ms linear;
-  &:hover,
-  &:focus {
+  .logotype-firsst-part {
     color: var(--accent-color);
   }
+  .nav__list {
+    display: none;
+  }
+  .header-contacts__list {
+    display: none;
+  }
+  .manu-bt {
+    position: absolute;
+    right: 15px;
+  }
+  .manu-bt__svg {
+    @include wid(24px, 24px);
+  }
+  .manu-bt {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
 }
-.contacts-svg {
-  fill: var(--color-content);
-  margin-right: 10px;
-  fill: currentColor;
+
+//tablet
+@media screen and (min-width: 768px) {
+  .header {
+    border-bottom: 1px solid #ececec;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin: 0 auto;
+  }
+  .manu-bt {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+  }
+  .header__section {
+    width: 768px;
+  }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    margin-right: 84px;
+  }
+  .logotype {
+    @include font(24px, 700, 1.16, 0.03em);
+    margin-right: 88px;
+    align-items: center;
+    animation-duration: 250ms;
+  }
+  .nav__list {
+    display: flex;
+    align-items: center;
+  }
+  .nav__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  .nav__link {
+    @include font(14px, 500, 1.14, 0.02em);
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    transition: color 250ms linear;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .activ {
+    color: var(--accent-color);
+    &::after {
+      display: flex;
+      content: "";
+      @include wid(100%, 4px);
+      background-color: var(--accent-color);
+      flex-shrink: 0;
+      position: relative;
+      top: 32px;
+    }
+  }
+  .header-contacts__list {
+    display: block;
+    align-items: center;
+    margin-left: 0 auto;
+  }
+  .header-contacts__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  .header-contacts__link {
+    @include font(12px, 500, 1.16, 0.02em);
+    letter-spacing: 0.02em;
+    color: var(--color-content);
+    transition: color 250ms linear;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .contacts-svg {
+    fill: var(--color-content);
+    fill: currentColor;
+  }
+  .email-svg {
+    @include wid(16px, 12px);
+  }
+  .tel-svg {
+    @include wid(10px, 16px);
+  }
+  .manu-bt {
+    display: none;
+  }
 }
-.email-svg {
-  @include wid(16px, 12px);
+
+//desktop
+@media screen and (min-width: 1200px) {
+  .header {
+    border-bottom: 1px solid #ececec;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  .header_container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
+  .logotype {
+    font-family: var(--second-foyn);
+    @include font(26px, 700, 1.19, 0.03em);
+    color: var(--color-logo-heder);
+    margin-right: 93px;
+    animation-duration: 250ms;
+  }
+  .logotype-firsst-part {
+    color: var(--accent-color);
+  }
+  .nav__list {
+    display: flex;
+    align-items: center;
+  }
+  .nav__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  .nav__link {
+    @include font(14px, 500, 1.14, 0.02em);
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    transition: color 250ms linear;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .activ {
+    color: var(--accent-color);
+    &::after {
+      display: flex;
+      content: "";
+      @include wid(100%, 4px);
+      background-color: var(--accent-color);
+      flex-shrink: 0;
+      position: relative;
+      top: 32px;
+    }
+  }
+  .header-contacts__list {
+    display: flex;
+    margin: 0 auto;
+  }
+  .header-contacts__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
+  }
+  .header-contacts__link {
+    @include font(14px, 500, 1.14, 0.02em);
+    letter-spacing: 0.02em;
+    color: var(--color-content);
+    transition: color 250ms linear;
+    display: flex;
+    justify-content: center;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .contacts-svg {
+    fill: var(--color-content);
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
-.tel-svg {
-  @include wid(10px, 16px);
-}
+
+//.header {
+//  border-bottom: 1px solid #ececec;
+//  padding-top: 24px;
+//  padding-bottom: 25px;
+//}
+//.header__section {
+//  display: flex;
+//  align-items: center;
+//  width: 1200px;
+//  padding-left: 15px;
+//  padding-right: 15px;
+//  margin: 0 auto;
+//}
+//.header__nav {
+//  display: flex;
+//  align-items: center;
+//}
+//.logotype {
+//  font-family: var(--second-foyn);
+//  @include font(26px, 700, 1.19, 0.03em);
+//  color: var(--color-logo-heder);
+//  margin-right: 93px;
+//  animation-duration: 250ms;
+//}
+//.logotype-firsst-part {
+//  color: var(--accent-color);
+//}
+//.nav__list {
+//  display: flex;
+//  align-items: center;
+//}
+//.nav__item {
+//  &:not(:last-child) {
+//    margin-right: 50px;
+//  }
+//}
+//.nav__link {
+//  @include font(14px, 500, 1.14, 0.02em);
+//  letter-spacing: 0.02em;
+//  color: var(--title-color);
+//  transition: color 250ms linear;
+//  &:hover,
+//  &:focus {
+//    color: var(--accent-color);
+//  }
+//}
+//.activ {
+//  color: var(--accent-color);
+//  &::after {
+//    display: flex;
+//    content: "";
+//    @include wid(100%, 4px);
+//    background-color: var(--accent-color);
+//    flex-shrink: 0;
+//    position: relative;
+//    top: 32px;
+//  }
+//}
+//.header-contacts__list {
+//  display: flex;
+//  align-items: center;
+//  margin-left: auto;
+//}
+//.header-contacts__item {
+//  &:not(:last-child) {
+//    margin-right: 50px;
+//  }
+//}
+//.header-contacts__link {
+//  @include font(14px, 500, 1.14, 0.02em);
+//  letter-spacing: 0.02em;
+//  color: var(--color-content);
+//  transition: color 250ms linear;
+//  &:hover,
+//  &:focus {
+//    color: var(--accent-color);
+//  }
+//}
+//.contacts-svg {
+//  fill: var(--color-content);
+//  margin-right: 10px;
+//  fill: currentColor;
+//}
+//.email-svg {
+//  @include wid(16px, 12px);
+//}
+//.tel-svg {
+//  @include wid(10px, 16px);
+//}

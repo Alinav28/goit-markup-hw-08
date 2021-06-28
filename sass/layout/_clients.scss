@@ -1,52 +1,152 @@
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.clients__list {
-  display: flex;
-  transform: fill 250ms linear;
-  padding-top: 50px;
-}
-.clients__link {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  @include wid(170px, 92px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: var(--clients-svg-color);
-  transition: fill 250ms linear, border 250ms linear;
-  &:hover,
-  &:focus {
-    border: 1px solid #2196f3;
+//mobail
+@media screen and (max-width: 768px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-  &:hover .clients-svg,
-  &:focus .clients-svg {
-    fill: var(--accent-color);
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: -30px;
+  }
+  .clients__item {
+    fill: var(--clients-svg-color);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .clients__link {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    @include wid(210px, 92px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--clients-svg-color);
+    transition: fill 250ms linear, border 250ms linear;
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+    }
+    &:hover .clients-svg,
+    &:focus .clients-svg {
+      fill: var(--accent-color);
+    }
+  }
+  .svg-first {
+    @include wid(41px, 47px);
+  }
+  .svg-second {
+    @include wid(40px, 52px);
+  }
+  .svg-third {
+    @include wid(43px, 41px);
+  }
+  .svg-quarters {
+    @include wid(85px, 41px);
+  }
+  .svg-fifth {
+    @include wid(63px, 45px);
+  }
+  .svg-sixth {
+    @include wid(93px, 43px);
   }
 }
-
-.clients__item {
-  fill: var(--clients-svg-color);
-  &:not(:last-child) {
-    margin-right: 30px;
+//
+//
+//
+//
+//tablet
+@media screen and (min-width: 768px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: -30px;
+  }
+  .clients__item {
+    fill: var(--clients-svg-color);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .clients__link {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    @include wid(226px, 92px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--clients-svg-color);
+    transition: fill 250ms linear, border 250ms linear;
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+    }
+    &:hover .clients-svg,
+    &:focus .clients-svg {
+      fill: var(--accent-color);
+    }
   }
 }
-.svg-first {
-  @include wid(41px, 47px);
-}
-.svg-second {
-  @include wid(40px, 52px);
-}
-.svg-third {
-  @include wid(43px, 41px);
-}
-.svg-quarters {
-  @include wid(85px, 41px);
-}
-.svg-fifth {
-  @include wid(63px, 45px);
-}
-.svg-sixth {
-  @include wid(93px, 43px);
+//
+//
+//
+//
+//
+//desktop
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .clients__list {
+    display: flex;
+    transform: fill 250ms linear;
+    padding-top: 50px;
+  }
+  .clients__link {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    @include wid(170px, 92px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--clients-svg-color);
+    transition: fill 250ms linear, border 250ms linear;
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+    }
+    &:hover .clients-svg,
+    &:focus .clients-svg {
+      fill: var(--accent-color);
+    }
+  }
+  .clients__item {
+    fill: var(--clients-svg-color);
+  }
+  .svg-first {
+    @include wid(41px, 47px);
+  }
+  .svg-second {
+    @include wid(40px, 52px);
+  }
+  .svg-third {
+    @include wid(43px, 41px);
+  }
+  .svg-quarters {
+    @include wid(85px, 41px);
+  }
+  .svg-fifth {
+    @include wid(63px, 45px);
+  }
+  .svg-sixth {
+    @include wid(93px, 43px);
+  }
 }
