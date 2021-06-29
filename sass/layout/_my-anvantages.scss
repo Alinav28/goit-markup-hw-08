@@ -1,14 +1,16 @@
 //mobail
 @media screen and (max-width: 767px) {
   .anvantages {
+    display: flex;
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
+    margin: 0 auto;
   }
   .anvantages__list {
+    width: 450px;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    margin-left: -15px;
   }
 
   .anvantages__tumb {
@@ -44,6 +46,7 @@
 //tablet
 @media screen and (min-width: 768px) {
   .anvantages {
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 30px;
   }
@@ -54,7 +57,6 @@
     margin-bottom: 10px;
     display: flex;
   }
-
   .anvantages__tumb {
     display: flex;
     @include wid(354px, 120px);
@@ -63,7 +65,6 @@
     align-items: center;
     margin-bottom: 30px;
   }
-
   .anvantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -74,7 +75,6 @@
     margin-left: 30px;
     width: 354px;
   }
-
   .anvantages-svg {
     @include wid(70px, 70px);
     display: flex;
@@ -84,7 +84,6 @@
     margin-bottom: 30px;
   }
 }
-
 //desktop
 @media screen and (min-width: 1200px) {
   .anvantages {

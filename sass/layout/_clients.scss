@@ -3,9 +3,11 @@
   .clients {
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 100%;
   }
   .clients__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 30px;
@@ -58,6 +60,7 @@
 //
 //
 //tablet
+
 @media screen and (min-width: 768px) {
   .clients {
     padding-top: 60px;
@@ -92,6 +95,24 @@
     &:focus .clients-svg {
       fill: var(--accent-color);
     }
+  }
+  .svg-first {
+    @include wid(41px, 47px);
+  }
+  .svg-second {
+    @include wid(40px, 52px);
+  }
+  .svg-third {
+    @include wid(43px, 41px);
+  }
+  .svg-quarters {
+    @include wid(85px, 41px);
+  }
+  .svg-fifth {
+    @include wid(63px, 45px);
+  }
+  .svg-sixth {
+    @include wid(93px, 43px);
   }
 }
 //

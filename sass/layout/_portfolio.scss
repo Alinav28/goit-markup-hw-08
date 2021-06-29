@@ -66,6 +66,7 @@
     margin-top: -30px;
   }
   .content__item {
+    width: 350px;
     margin-left: 30px;
     margin-top: 30px;
     cursor: pointer;
@@ -107,6 +108,7 @@
     padding-top: 10px;
   }
   .texts-item__text {
+    width: 350px;
     @include font(16px, 400, 1.87, 0.03);
     color: var(--color-content);
     padding-bottom: 20px;
@@ -115,7 +117,7 @@
     padding-bottom: 56px;
   }
   .content__texts-item {
-    width: 354px;
+    width: 350px;
     padding: 20px 24px;
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
