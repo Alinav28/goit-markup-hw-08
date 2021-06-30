@@ -7,6 +7,7 @@
     margin: 0 auto;
   }
   .header_container {
+    max-width: 450px;
     display: flex;
     margin: 0 auto;
     align-content: center;
@@ -129,6 +130,8 @@
     }
   }
   .header-contacts__link {
+    display: flex;
+    align-items: center;
     @include font(12px, 500, 1.16, 0.02em);
     letter-spacing: 0.02em;
     color: var(--color-content);

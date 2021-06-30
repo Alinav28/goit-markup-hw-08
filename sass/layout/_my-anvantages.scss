@@ -48,7 +48,7 @@
   .anvantages {
     width: 100%;
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
   .anvantages__heading {
     @include font(14px, 700, 1.14, 0.03em);
@@ -69,19 +69,17 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-bottom: 30px;
+    margin-top: -30px;
   }
   .anvantages__item {
     margin-left: 30px;
+    margin-top: 30px;
     width: 354px;
   }
   .anvantages-svg {
     @include wid(70px, 70px);
     display: flex;
     justify-content: center;
-  }
-  .anvantages__text {
-    margin-bottom: 30px;
   }
 }
 //desktop
@@ -110,12 +108,13 @@
   .anvantages__list {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
     margin: 0 auto;
-    margin-left: -30px;
   }
   .anvantages__item {
-    margin-left: 30px;
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
   .anvantages-svg {
     @include wid(70px, 70px);

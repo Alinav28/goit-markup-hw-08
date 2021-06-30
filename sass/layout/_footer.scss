@@ -199,9 +199,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .footer__logotype-section {
-    margin-left: 76px;
-  }
+
   .logotype__firsst-part {
     color: var(--accent-color);
   }
@@ -209,16 +207,26 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    justify-content: space-between;
   }
   .footer__logotype {
     font-family: var(--second-foyn);
     @include font(16px, 700, 1.19, 0.03);
     color: var(--light-color-content);
     display: flex;
+    justify-content: center;
   }
   .footer__address {
     margin-top: 20px;
     font-style: normal;
+  }
+  .address__list {
+    display: block;
+    justify-content: center;
+  }
+  .address__item {
+    display: flex;
+    justify-content: center;
   }
   .address__item:not(:last-child) {
     margin-bottom: 9px;
@@ -234,13 +242,15 @@
   }
 
   .footer-sosial-section {
-    margin-left: 165px;
+    display: block;
   }
   .footer__heading {
     @include font(14px, 700, 1.14, 0.03em);
     text-transform: uppercase;
     color: var(--light-color-content);
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
 
   .foorer__form {
@@ -250,16 +260,20 @@
   }
   .footer__fopm-sektion {
     display: block;
-    margin-left: 24%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 60px;
   }
 
   .footer__form-name {
-    @include wid(219px, 16px);
     @include font(14px, 700, 1.14, 0.03);
     text-transform: uppercase;
     color: var(--light-color-content);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     margin-bottom: 20px;
-    margin-left: 13%;
+    margin: 0 auto;
   }
   .form__label {
     display: block;
@@ -268,7 +282,7 @@
   .footer__contact-input {
     margin-bottom: 20px;
     margin-top: 20px;
-    @include wid(358px, 50px);
+    @include wid(100%, 50px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -298,11 +312,10 @@
     background: var(--modal-button-background);
     padding: 10px 62px 10px 29px;
     border-radius: 4px;
-    margin-left: 15%;
-    margin-top: auto;
-    margin-right: auto;
+    margin: 0 auto;
     border-style: none;
     display: block;
+    justify-content: center;
     cursor: pointer;
     transition: background-color 250ms linear, color 250ms linear;
     &:hover,
@@ -346,11 +359,14 @@
     font-family: var(--second-foyn);
     @include font(16px, 700, 1.19, 0.03);
     color: var(--light-color-content);
-    display: flex;
+    display: block;
   }
   .footer__address {
     margin-top: 20px;
     font-style: normal;
+  }
+  .address__item {
+    display: block;
   }
   .address__item:not(:last-child) {
     margin-bottom: 9px;
@@ -383,8 +399,7 @@
     margin: 0 auto;
   }
   .footer__form-name {
-    align-content: center;
-    @include wid(219px, 16px);
+    display: block;
     @include font(14px, 700, 1.14, 0.03);
     text-transform: uppercase;
     color: var(--light-color-content);

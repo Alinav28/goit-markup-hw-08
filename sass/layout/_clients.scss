@@ -4,14 +4,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
     width: 100%;
+    display: flex;
   }
   .clients__list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
-    margin-top: 30px;
+    justify-content: center;
     margin-left: -30px;
+    top: -30px;
   }
   .clients__item {
     fill: var(--clients-svg-color);
@@ -70,7 +70,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 30px;
     margin-left: -30px;
   }
   .clients__item {
@@ -129,9 +128,10 @@
   .clients__list {
     display: flex;
     transform: fill 250ms linear;
-    padding-top: 50px;
+    margin-top: -50px;
   }
   .clients__link {
+    margin-top: 50px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     @include wid(170px, 92px);

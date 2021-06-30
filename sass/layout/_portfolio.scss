@@ -1,5 +1,8 @@
 //mobail
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: 480px;
+  }
   .content__list {
     width: 100%;
     display: block;
@@ -7,8 +10,10 @@
   }
   .content__item {
     width: 450px;
-    margin-top: 30px;
     cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   .overly-hover-linc {
     display: block;
