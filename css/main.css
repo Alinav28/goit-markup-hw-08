@@ -565,7 +565,6 @@ body {
   }
   .bt-list__item {
     background-color: var(--bt-menu-background);
-    margin-bottom: 15px;
   }
   .bt-list__item:not(:last-child) {
     margin-right: 8px;
@@ -1070,6 +1069,7 @@ body {
   .contacts-svg {
     fill: var(--color-content);
     fill: currentColor;
+    margin-right: 8px;
   }
   .email-svg {
     width: 16px;
@@ -1529,7 +1529,7 @@ body {
   .command__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: -30px;
     margin-left: -30px;
   }
   .command__item {
@@ -1573,11 +1573,11 @@ body {
   }
   .command__list {
     display: flex;
-    margin-top: 50px;
+    margin-top: -50px;
     margin-left: -30px;
   }
   .command__item {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -1864,7 +1864,7 @@ body {
   }
   .footer__logotype-section {
     display: block;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     margin-bottom: 60px;
   }
