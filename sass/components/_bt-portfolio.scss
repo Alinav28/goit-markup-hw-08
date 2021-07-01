@@ -22,6 +22,7 @@
     border: none;
     transition: background-color 250ms linear, color 250ms linear;
     cursor: pointer;
+
     &:focus {
       color: var(--light-color-content);
       background-color: var(--accent-color);
