@@ -1,82 +1,92 @@
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  @include wid(100vw, 100vh);
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 100;
-  transition: opacity 250ms linear, visibility 250ms linear;
-}
-.is-open {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-.mobail-menu {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  @include wid(100%, 100vh);
-  background-color: var(--light-color-content);
-  border-radius: 4px;
-  padding-left: 40px;
-  padding-top: 48px;
-  cursor: pointer;
-}
-.menu__close-bt {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  right: 0;
-  top: 10px;
-}
-.mobail-menu_item {
-  margin-bottom: 32px;
-}
-.mobail-menu_link {
-  @include font(40px, 500, 1.17, 00.02em);
-  color: var(--title-color);
-  &:focus {
+@media screen and (max-width: 768px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include wid(100vw, 100vh);
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    transition: opacity 250ms linear, visibility 250ms linear;
+  }
+  .is-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .mobail-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include wid(100%, 100vh);
+    background-color: var(--light-color-content);
+    border-radius: 4px;
+    padding: 48px 25px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menu__close-bt {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  .mobail-menu_item {
+    margin-bottom: 32px;
+  }
+  .mobail-menu_link {
+    @include font(40px, 500, 1.17, 00.02em);
+    color: var(--title-color);
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .acsent {
     color: var(--accent-color);
   }
-}
-.acsent {
-  color: var(--accent-color);
-}
-.mobail-menu_contact-list {
-  margin-top: 250px;
-}
-.mobail-menu_contact-item {
-  margin-bottom: 32px;
-}
+  .mobail-menu_contact-list {
+    margin-bottom: 0 auto;
+  }
+  .mobail-menu_contact-item {
+    margin-bottom: 32px;
+  }
 
-.mobail-menu_contact-mail {
-  @include font(24px, 500, 1.16, 0.02em);
-  color: var(--color-content);
-  &:focus {
+  .mobail-menu_contact-mail {
+    @include font(24px, 500, 1.16, 0.02em);
+    color: var(--color-content);
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .mobail-menu_contact-tel {
+    @include font(34px, 500, 1.17, 0.02em);
+    color: var(--color-content);
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .mobail-menu_cosial-lict {
+    display: flex;
+    margin-bottom: 0px;
+  }
+  .mobail-menu_cosial-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    &:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+  .mobail-menu_cosial-linc {
+    @include font(18px, 500, 1.22, 0.02em);
     color: var(--accent-color);
   }
 }
-.mobail-menu_contact-tel {
-  @include font(34px, 500, 1.17, 0.02em);
-  color: var(--color-content);
-  &:focus {
-    color: var(--accent-color);
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
   }
-}
-.mobail-menu_cosial-lict {
-  display: flex;
-  margin-bottom: 53px;
-}
-.mobail-menu_cosial-item {
-  padding-left: 10px;
-  padding-right: 10px;
-  &:not(:last-child) {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-  }
-}
-.mobail-menu_cosial-linc {
-  @include font(18px, 500, 1.22, 0.02em);
-  color: var(--accent-color);
 }

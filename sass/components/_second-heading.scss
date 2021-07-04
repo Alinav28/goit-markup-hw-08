@@ -1,12 +1,15 @@
 //mobail
-.second-heading {
-  @include font(28px, 700, 1.18, 0.03em);
-  text-align: center;
-  color: var(--title-color);
+@media screen and (max-width: 1200px) {
+  .second-heading {
+    @include font(28px, 700, 1.18, 0.03em);
+    text-align: center;
+    color: var(--title-color);
+  }
 }
-
-//.second-heading {
-//  @include font(36px, 700, 1.16, 0.03em);
-//  text-align: center;
-//  color: var(--title-color);
-//}
+@media screen and (min-width: 1200px) {
+  .second-heading {
+    @include font(36px, 700, 1.16, 0.03em);
+    text-align: center;
+    color: var(--title-color);
+  }
+}

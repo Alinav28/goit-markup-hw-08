@@ -70,7 +70,7 @@
     align-items: center;
     margin: 0 auto;
     font-family: var(--first-foyn);
-    @include font(14px, 400, 1.16, 0.03em);
+    @include font(12px, 400, 1.16, 0.03em);
     color: var(--color-content);
     cursor: pointer;
   }
@@ -84,7 +84,6 @@
     @include wid(16px, 15px);
     border-radius: 4px;
     position: relative;
-    margin-left: 13px;
     cursor: pointer;
   }
   .check-input:focus + .form__check::before {
@@ -96,8 +95,8 @@
   }
 
   .form__svg-modal-off {
-    top: 8px;
-    left: 16px;
+    top: 5px;
+    left: 2px;
     margin: auto;
     position: absolute;
   }
@@ -204,7 +203,7 @@
   }
 
   .form__svg-modal-off {
-    top: 8px;
+    top: 5px;
     left: 16px;
     margin: auto;
     position: absolute;

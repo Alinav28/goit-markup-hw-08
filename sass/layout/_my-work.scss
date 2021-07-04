@@ -23,14 +23,15 @@
   .work__item {
     display: block;
     margin-left: 30px;
-    margin-top: 30px;
+  }
+  .work-nama__item {
+    @include font(14px, 700, 1.14, 0.03em);
+    color: var(--light-color-content);
   }
   .work__nama {
     background-color: rgba(47, 48, 58, 0.8);
-    @include font(14px, 700, 1.14, 0.03em);
     text-align: center;
     text-transform: uppercase;
-    color: var(--light-color-content);
     padding-top: 27px;
     padding-bottom: 27px;
     position: relative;

@@ -161,8 +161,7 @@
 @media screen and (min-width: 1200px) {
   .header {
     border-bottom: 1px solid #ececec;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    height: 80px;
   }
   .header_container {
     display: flex;
@@ -220,6 +219,7 @@
   .header-contacts__list {
     display: flex;
     margin: 0 auto;
+    margin-right: 0;
   }
   .header-contacts__item {
     &:not(:last-child) {
@@ -245,93 +245,3 @@
     fill: currentColor;
   }
 }
-
-//.header {
-//  border-bottom: 1px solid #ececec;
-//  padding-top: 24px;
-//  padding-bottom: 25px;
-//}
-//.header__section {
-//  display: flex;
-//  align-items: center;
-//  width: 1200px;
-//  padding-left: 15px;
-//  padding-right: 15px;
-//  margin: 0 auto;
-//}
-//.header__nav {
-//  display: flex;
-//  align-items: center;
-//}
-//.logotype {
-//  font-family: var(--second-foyn);
-//  @include font(26px, 700, 1.19, 0.03em);
-//  color: var(--color-logo-heder);
-//  margin-right: 93px;
-//  animation-duration: 250ms;
-//}
-//.logotype-firsst-part {
-//  color: var(--accent-color);
-//}
-//.nav__list {
-//  display: flex;
-//  align-items: center;
-//}
-//.nav__item {
-//  &:not(:last-child) {
-//    margin-right: 50px;
-//  }
-//}
-//.nav__link {
-//  @include font(14px, 500, 1.14, 0.02em);
-//  letter-spacing: 0.02em;
-//  color: var(--title-color);
-//  transition: color 250ms linear;
-//  &:hover,
-//  &:focus {
-//    color: var(--accent-color);
-//  }
-//}
-//.activ {
-//  color: var(--accent-color);
-//  &::after {
-//    display: flex;
-//    content: "";
-//    @include wid(100%, 4px);
-//    background-color: var(--accent-color);
-//    flex-shrink: 0;
-//    position: relative;
-//    top: 32px;
-//  }
-//}
-//.header-contacts__list {
-//  display: flex;
-//  align-items: center;
-//  margin-left: auto;
-//}
-//.header-contacts__item {
-//  &:not(:last-child) {
-//    margin-right: 50px;
-//  }
-//}
-//.header-contacts__link {
-//  @include font(14px, 500, 1.14, 0.02em);
-//  letter-spacing: 0.02em;
-//  color: var(--color-content);
-//  transition: color 250ms linear;
-//  &:hover,
-//  &:focus {
-//    color: var(--accent-color);
-//  }
-//}
-//.contacts-svg {
-//  fill: var(--color-content);
-//  margin-right: 10px;
-//  fill: currentColor;
-//}
-//.email-svg {
-//  @include wid(16px, 12px);
-//}
-//.tel-svg {
-//  @include wid(10px, 16px);
-//}

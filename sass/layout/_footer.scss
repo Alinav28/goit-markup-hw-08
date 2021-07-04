@@ -12,7 +12,6 @@
     border-radius: 4px;
     background-color: var(--background-color-footer);
     color: var(--light-color-content);
-    margin-bottom: 20px;
     outline: none;
     transition: background-color 250ms linear;
     cursor: pointer;
@@ -77,13 +76,14 @@
   }
   .footer__logotype {
     font-family: var(--second-foyn);
-    @include font(24px, 700, 1.17, 0.03);
+    @include font(24px, 700, 1.16, 0.03);
     color: var(--light-color-content);
     display: flex;
     justify-content: center;
     text-align: center;
   }
   .logotype__firsst-part {
+    font-family: var(--second-foyn);
     color: var(--accent-color);
   }
   .footer__address {
@@ -116,7 +116,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
   }
   .foorer__form {
     position: relative;
@@ -196,8 +195,7 @@
   .footer {
     display: flex;
     background-color: var(--background-color-footer);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px;
   }
 
   .logotype__firsst-part {
@@ -211,7 +209,7 @@
   }
   .footer__logotype {
     font-family: var(--second-foyn);
-    @include font(16px, 700, 1.19, 0.03);
+    @include font(24px, 700, 1.16, 0.03);
     color: var(--light-color-content);
     display: flex;
     justify-content: center;
@@ -263,6 +261,7 @@
     margin: 0 auto;
     justify-content: center;
     margin-top: 60px;
+    margin-bottom: 60px;
   }
 
   .footer__form-name {
@@ -339,6 +338,7 @@
 @media screen and (min-width: 1200px) {
   .footer {
     background-color: var(--background-color-footer);
+    padding: 0;
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
@@ -357,7 +357,7 @@
   }
   .footer__logotype {
     font-family: var(--second-foyn);
-    @include font(16px, 700, 1.19, 0.03);
+    @include font(26px, 700, 1.19, 0.03);
     color: var(--light-color-content);
     display: block;
   }
@@ -383,6 +383,7 @@
   .footer__heading {
     @include font(14px, 700, 1.14, 0.03em);
     text-transform: uppercase;
+    justify-content: flex-start;
     color: var(--light-color-content);
     margin-bottom: 20px;
   }
