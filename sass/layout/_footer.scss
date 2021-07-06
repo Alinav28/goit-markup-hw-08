@@ -3,6 +3,12 @@
   .form__label {
     display: block;
   }
+  .footer__fopm-sektion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .footer__contact-input {
     width: 100%;
     height: 50px;
@@ -82,6 +88,7 @@
     justify-content: center;
     text-align: center;
   }
+
   .logotype__firsst-part {
     font-family: var(--second-foyn);
     color: var(--accent-color);
@@ -126,6 +133,7 @@
 
   .footer__form-name {
     align-content: center;
+    justify-content: center;
     @include font(14px, 700, 1.14, 0.03);
     text-transform: uppercase;
     color: var(--light-color-content);
@@ -161,7 +169,7 @@
   }
 
   .footer__bt-form {
-    margin-left: 25%;
+    margin-left: 30%;
     position: relative;
     @include font(16px, 700, 1.87, 0.06);
     color: var(--light-color-content);
@@ -205,7 +213,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .footer__logotype {
     font-family: var(--second-foyn);

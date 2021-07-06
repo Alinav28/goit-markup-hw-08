@@ -10,6 +10,7 @@
   .anvantages__list {
     width: 450px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
   }
 
@@ -37,7 +38,7 @@
     align-items: center;
   }
   .anvantages__item {
-    margin-left: 15px;
+    margin-left: 0;
     &:not(:last-child) {
       margin-bottom: 30px;
     }

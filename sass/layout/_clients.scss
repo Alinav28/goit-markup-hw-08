@@ -151,6 +151,7 @@
   }
   .clients__item {
     fill: var(--clients-svg-color);
+    margin-top: 50px;
   }
   .svg-first {
     @include wid(41px, 47px);

@@ -15,7 +15,6 @@
   .hero__item {
     display: flex;
     justify-content: center;
-    word-wrap: normal;
     @include font(24px, 900, 1.61, 0.06em);
     text-align: center;
     text-transform: uppercase;
@@ -78,10 +77,18 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .hero-text {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
   .hero__item {
-    margin-left: 189px;
-    margin-right: 189px;
+    display: flex;
+    justify-content: center;
     @include font(26px, 900, 1.61, 0.06em);
+    color: var(--light-color-content);
+    text-align: center;
+    text-transform: uppercase;
     color: var(--light-color-content);
   }
 }
@@ -113,6 +120,12 @@
       url(../hero/hero-desktop@1x.png);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .hero-text {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .hero__item {
     @include font(44px, 900, 1.36, 0.06em);
